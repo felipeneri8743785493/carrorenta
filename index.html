@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renta de Autos | Disponibilidad en Vivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-image-container">
+            <img src="march.webp" alt="Nissan March 2020" class="card-image">
+        </div>
+
+        <div class="card-header">
+            <span class="category">Sedán Familiar</span>
+            <h1>Nissan March 2020</h1>
+        </div>
+        
+        <div class="card-body">
+            <div class="contact-info">
+                <p><strong>📍 Dirección:</strong> Boulevard de las Naciones No. 1817, Col. Playa Diamante, C.P. 39897, Acapulco de Juárez, Guerrero</p>
+                <p><strong>📞 Teléfono:</strong> <a href="tel:+527442342542">+52 744 234 2542</a></p>
+            </div>
+
+            <div id="status-badge" class="badge">Verificando horario...</div>
+
+            <div id="service-online" class="service-section">
+                <p class="promo-text">¡Estamos listos para atenderte!</p>
+                <button class="btn btn-primary">Rentar Ahora</button>
+            </div>
+
+            <div id="service-offline" class="service-section" style="display: none;">
+                <p class="offline-text">Estamos cerrados, pero déjanos tus datos y te llamamos al abrir:</p>
+                
+                <form action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Tu nombre completo" required>
+                    <input type="tel" name="phone" placeholder="Tu número de teléfono" required>
+                    
+                    <input type="hidden" name="_subject" value="Nueva Solicitud de Renta (Fuera de Horario)">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <button type="submit" class="btn btn-success">Enviar y ser contactado</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
